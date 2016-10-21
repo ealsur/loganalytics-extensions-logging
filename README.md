@@ -14,11 +14,11 @@ Using it is simple, just reference the package and add it to the Logging pipelin
 
 ```cs
 public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-		{
+{
 			//Add Logger
 			loggerFactory.AddLogAnalytics("{Your_Workspace_Id}", "{Your_Key_Id}", "{Your_Namespace}", LogLevel.Critical);
 			app.UseMvcWithDefaultRoute();			
-		}
+}
 ```
 Your **WorkspaceId** and **API Key** are part of your Azure Log Analytics subscription.
 
