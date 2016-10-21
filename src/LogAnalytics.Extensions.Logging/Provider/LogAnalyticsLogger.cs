@@ -54,13 +54,21 @@ namespace LogAnalytics.Extensions.Logging
 				return;
 			}
 
-			message = $"{_categoryName}{Environment.NewLine}{Environment.NewLine}{ logLevel }: {message}";
-
 			if (exception != null)
 			{
 				message += $"{Environment.NewLine}{Environment.NewLine}{exception.ToString()}";
 			}
-			_collector.Collect($"{_environmentName}", message);
+			_collector.Collect($"{_environmentName}", new LogEvent() { CategoryName=_categoryName, LogLevel=logLevel.ToString(), Message=message }).Wait();
+		}
+
+		/// <summary>
+		/// Wrapper class to send a Json Payload
+		/// </summary>
+		private class LogEvent
+		{
+			public string CategoryName { get; set; }
+			public string LogLevel { get; set; }
+			public string Message { get; set; }
 		}
 
 		public IDisposable BeginScope<TState>(TState state)
