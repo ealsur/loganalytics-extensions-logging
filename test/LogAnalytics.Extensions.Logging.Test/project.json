@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0",
   "buildOptions": {
     "emitEntryPoint": true,
@@ -20,7 +20,8 @@
 			"LogAnalytics.Extensions.Logging": {
 				"target": "project"
 			},
-			"Microsoft.AspNetCore.Server.IISIntegration": "1.0.0"
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+    "Microsoft.Extensions.Logging.Console": "1.0.0"
 	},
   "runtimeOptions": {
     "configProperties": {
