@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>LogAnalytics.Extensions.Logging</id>
+    <version>$version$</version>
+    <authors>ealsur</authors>
+    <owners>ealsur</owners>
+    <licenseUrl>https://github.com/ealsur/loganalytics-extensions-logging/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ealsur/loganalytics-extensions-logging</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Azure Log Analytics Logger extension for ASP.NET Core</description>
+    <releaseNotes>Opening version</releaseNotes>
+    <copyright>Copyright 2016. Ealsur.</copyright>
+    <tags>azure log analytics aspnetcore</tags>
+  </metadata>
+</package>
