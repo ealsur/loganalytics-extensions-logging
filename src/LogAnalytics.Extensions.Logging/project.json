@@ -1,0 +1,25 @@
+﻿{
+	"version": "1.0.0-*",
+	"description": "Azure LogAnalytics provider for Microsoft.Extensions.Logging",
+	"authors": [ "ealsur" ],
+	"packOptions": {
+		"tags": [ "azure", "Microsoft.Extensions.Logging", "loganalytics" ],
+		"projectUrl": "https://github.com/ealsur/loganalytics-extensions-logging",
+		"licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0"
+	},
+	"dependencies": {
+		"Microsoft.Extensions.Logging.Abstractions": "1.0.0",
+		"HTTPDataCollectorAPI": "1.0.1"
+	},
+	"frameworks": {
+		"net451": {
+			"dependencies": { "System.Runtime": "4.0.0" }
+		},
+		"netstandard1.3": {
+			"dependencies": {
+				"System.Threading": "4.0.11"
+			}
+		}
+	}
+	
+}
