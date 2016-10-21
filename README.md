@@ -2,6 +2,8 @@
 
 This package extends the logging options for ASP.NET Core adding the possibility of sending logs directly to [Azure Log Analytics](https://azure.microsoft.com/services/log-analytics/) as JSON payloads.
 
+It uses the [HTTPDataCollectorAPI](https://github.com/ealsur/HTTPDataCollectorAPI) package internally.
+
 ## Get it
 
 You can obtain this project as a [Nuget Package](https://www.nuget.org/packages/LogAnalytics.Extensions.Logging). 
