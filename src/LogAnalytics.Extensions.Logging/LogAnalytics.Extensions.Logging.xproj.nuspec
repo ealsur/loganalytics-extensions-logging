@@ -9,8 +9,8 @@
     <projectUrl>https://github.com/ealsur/loganalytics-extensions-logging</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Azure Log Analytics Logger extension for ASP.NET Core</description>
-    <releaseNotes>Opening version</releaseNotes>
-    <copyright>Copyright 2016. Ealsur.</copyright>
+    <releaseNotes>Improved async</releaseNotes>
+    <copyright>Copyright 2017. Ealsur.</copyright>
     <tags>azure log analytics aspnetcore</tags>
   </metadata>
 </package>
