@@ -1,6 +1,8 @@
 ﻿using HTTPDataCollectorAPI;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace LogAnalytics.Extensions.Logging
 {
@@ -58,7 +60,9 @@ namespace LogAnalytics.Extensions.Logging
 			{
 				message += $"{Environment.NewLine}{Environment.NewLine}{exception.ToString()}";
 			}
-			_collector.Collect($"{_environmentName}", new LogEvent() { CategoryName=_categoryName, LogLevel=logLevel.ToString(), Message=message }).Wait();
+			
+			_collector.Collect($"{_environmentName}", new LogEvent() { CategoryName=_categoryName, LogLevel=logLevel.ToString(), Message=message })
+				.ContinueWith(e => Debug.WriteLine(e.Exception), TaskContinuationOptions.OnlyOnFaulted);
 		}
 
 		/// <summary>
