@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LogAnalytics.Extensions.Logging", "src\LogAnalytics.Extensions.Logging\LogAnalytics.Extensions.Logging.xproj", "{00D6B13E-DD20-4A4B-8EC1-DC314B998307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogAnalytics.Extensions.Logging", "src\LogAnalytics.Extensions.Logging\LogAnalytics.Extensions.Logging.csproj", "{00D6B13E-DD20-4A4B-8EC1-DC314B998307}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LogAnalytics.Extensions.Logging.Test", "test\LogAnalytics.Extensions.Logging.Test\LogAnalytics.Extensions.Logging.Test.xproj", "{19C27F13-C68C-4562-9423-647D8DA15BE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogAnalytics.Extensions.Logging.Test", "test\LogAnalytics.Extensions.Logging.Test\LogAnalytics.Extensions.Logging.Test.csproj", "{19C27F13-C68C-4562-9423-647D8DA15BE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B65C1C65-FA30-48F2-BB76-3BA79A2438B2}
 	EndGlobalSection
 EndGlobal
