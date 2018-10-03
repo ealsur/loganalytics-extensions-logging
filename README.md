@@ -28,6 +28,18 @@ Your **WorkspaceId** and **API Key** are part of your Azure Log Analytics subscr
 
 The **Namespace** is the name that _identifies your LogType_ in Azure Log Analytics, mostly used to identify your application or source.
 
+## Does it support Azure Gov clouds?
+
+Yes, just add the extra parameter to the registration:
+
+```cs
+public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+{
+			//Add Logger
+			loggerFactory.AddLogAnalytics("{Your_Workspace_Id}", "{Your_Key_Id}", "{Your_Namespace}", LogLevel.Critical, "ods.opinsights.azure.us");
+			app.UseMvcWithDefaultRoute();			
+}
+```
 
 ## Issues
 
