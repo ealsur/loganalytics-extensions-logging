@@ -12,9 +12,9 @@ namespace LogAnalytics.Extensions.Logging
 		private readonly Func<string, LogLevel, bool> _filter;
 		private readonly ICollector _collector;
 		private readonly string _environmentName;
-		public LogAnalyticsLoggerProvider(Func<string, LogLevel, bool> filter, string workspaceId , string key, string environmentName)
+		public LogAnalyticsLoggerProvider(Func<string, LogLevel, bool> filter, string workspaceId , string key, string environmentName, string serviceNamespace)
 		{
-			_collector = new Collector(workspaceId, key);
+			_collector = string.IsNullOrEmpty(serviceNamespace) ? new Collector(workspaceId, key) : new Collector(workspaceId, key, serviceNamespace);
 			_filter = filter;
 			_environmentName = environmentName;
 		}
