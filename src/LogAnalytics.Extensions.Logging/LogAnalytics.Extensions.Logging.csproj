@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Azure LogAnalytics provider for Microsoft.Extensions.Logging</Description>
-    <VersionPrefix>1.2.0</VersionPrefix>
+    <VersionPrefix>1.2.1</VersionPrefix>
     <Authors>ealsur</Authors>
     <TargetFrameworks>net461;netstandard1.6</TargetFrameworks>
     <AssemblyName>LogAnalytics.Extensions.Logging</AssemblyName>
@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HTTPDataCollectorAPI" Version="1.0.4" />
+    <PackageReference Include="HTTPDataCollectorAPI" Version="1.0.5" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
